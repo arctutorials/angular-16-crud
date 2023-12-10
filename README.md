@@ -1,6 +1,21 @@
 # Creditcardadmin
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.0.
+This project is part of ARC Tutorials Angular 16 CRUD Operations Series.
+
+The project links are given here:
+
+Part 1-13 - [https://youtu.be/mfMXGNeXzYE?si=c_Q64YUSA3dj17Wo](https://www.youtube.com/watch?v=mfMXGNeXzYE&list=PLp50dWW_m40USzfLLu1D8dyLUwBn3-qux)
+
+## Setup & Running the Application
+
+Step #1 -> Clone the Repository
+
+Step #2 -> Run the command -> npm install 
+
+Step #3 -> Open the terminal -> json-server --watch db.json 
+
+Step #4 -> Open the terminal -> ng serve
+
 
 ## Development server
 
