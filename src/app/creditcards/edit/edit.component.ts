@@ -15,6 +15,8 @@ export class EditComponent {
 
   editCreditCardForm!: FormGroup;
 
+  creditCardId: number = 0;
+
   creditCardData: CreditCard | null = null;
 
   private destroy$ : Subject<void> = new Subject<void>();
@@ -25,6 +27,7 @@ export class EditComponent {
     private creditCardsService: CreditcardsService) {
 
       this.editCreditCardForm = this.formBuilder.group({
+        id: [this.creditCardId],
         name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(20)]],
         description: ['', Validators.required],
         bankName: ['', Validators.required],
@@ -41,6 +44,7 @@ export class EditComponent {
 
   ngOnInit(){
     const id = parseInt(this.route.snapshot.paramMap.get("id") || '');
+    this.creditCardId = id;
 
     if(id !== 0){
       this.creditCardsService.getCreditCardById(id)

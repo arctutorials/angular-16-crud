@@ -6,6 +6,10 @@
         <form [formGroup]="editCreditCardForm" (ngSubmit)="onSubmit()">
 
             <div class="form-group">
+                <input type="hidden" placeholder="Credit Card Name" formControlName="id" value={{creditCardId}}>
+            </div>
+
+            <div class="form-group">
                 <mat-form-field class="half-width">
                     <label>Credit Card Name</label>
                     <input matInput placeholder="Credit Card Name" formControlName="name">
